@@ -1,6 +1,4 @@
 
-
-
 body{
     background-color: #0e0e0e;
      overflow-x: hidden;
@@ -378,6 +376,143 @@ ul a.active {
     font-family:"Orbitron", "sans-serif";
     text-align: center;
     margin-top: 150px;
+}
+.Project-Section-Subtitle{
+    font-family: "Poppins", sans-serif;
+    color: #9a9a9a;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Hover polish shared across project cards */
+.Project-box, .Project-box2, .Project-box3, .Project-box4{
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.Project-box:hover, .Project-box2:hover, .Project-box3:hover, .Project-box4:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 0 22px blue;
+}
+/* Featured Project box (MMS) */
+.Project-box4{
+  width: 900px;
+  min-height: 420px;
+  box-shadow: 0 0 14px blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background-color: #1f1f1f;
+  border: 2px solid #2563ff;
+  padding: 40px;
+  border-radius: 30px;
+  gap: 30px;
+}
+.Project-box4 img{
+  width: 420px;
+  height: 350px;
+  object-fit: contain;
+  background-color: #141414;
+  border: none;
+  border-radius: 20px;
+}
+.Project-box4 h2{
+    color: white;
+    font-family: "Poppins";
+    font-size: 22px;
+    margin: 10px 0;
+}
+.inside-Project-4-headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+.Featured-tag{
+    background: linear-gradient(135deg, #2563ff, #5b8bff);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+.Project-4-desc{
+    color: #b0b0b0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+.Project-4-technologies{
+    color: white;
+    font-family: "Poppins";
+    border-radius: 10px;
+    width: 100%;
+}
+.Project-4-technologies h3{
+  background-color: blue;
+  border-radius: 5px;
+  width: 160px;
+  justify-content:center;
+  text-align: center;
+  display: inline-block;
+  padding:5px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.Project-4-technologies li{
+  display: inline-block;
+  margin: 4px 8px 4px 0;
+  background-color: #2a2a2a;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.inside-Project-4-headings a{
+    text-decoration: none;
+}
+.inside-Project-4-headings button{
+    background-color: blue;
+    width: 150px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    font-family: "Poppins";
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    transition: transform 0.3s ease;
+    border-color: blue;
+    margin-top: 6px;
+}
+.inside-Project-4-headings button:hover{
+    transform: translateY(-2px) scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 9px blue;
+}
+@media(max-width:600px){
+    .Project-box4{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: left;
+    }
+    .Project-box4 img{
+        width: 100%;
+        height: auto;
+    }
+    .Project-box4 h2{
+        text-align: left;
+    }
 }
 .inside-project1-heading{
     display: flex;
